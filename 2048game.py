@@ -27,7 +27,7 @@ def inserting_tile():
         board[a][b]=2
     else :
         inserting_tile()
-#==== =============================================left===================================================
+#==== =============================================leftmove function===================================================
 def leftmove():
     def left(i,j):
         while i<n and j<n-1:
@@ -49,7 +49,7 @@ def leftmove():
     addleft()
     for i in range(0,n):
         left(0,0)
-# ====================================================right=============================================
+# ====================================================rightmove function=============================================
 def rightmove():
     def right(i,j):
         while j>0 and i<n:
@@ -76,7 +76,7 @@ def rightmove():
     addright(0,n-1)
     for i in range(0,n):
         right(0,n-1)
-# =================================================up=================================================
+# =================================================moveup function=================================================
 def moveup():
     def up(i,j):
         while i<n-1 and j<n:
@@ -97,7 +97,7 @@ def moveup():
                 board[row+1][col]=0
     for i in range(0,n):
         up(0,0)
-# ================================================down==================================================
+# ================================================movedown function==================================================
 def movedown():
     def down(i,j):
         while i>0 and j<n:
@@ -138,20 +138,21 @@ def play_move():
     else:
         print("invalid move","\n play again")
         play_move()
-#===============================printing=============================
+#===============================printing board=============================
 def printing():
     for i in range(0,n):
             for j in range(0,n):
                 print(int(board[i][j]),end=" ")
             print("")
-#============================================progress======================================
-inserting_tile()
-status=True
+#============================================clear screen======================================
 def clear():
     if os.name=='nt':
         _=os.system('cls')
     else:
         _=os.system('clear')
+#===============================================main code=======================================
+inserting_tile()
+status=True
 while status==True:
     status=False
     for i in range(0,n):
@@ -194,13 +195,3 @@ while status==True:
         c=a-b
         if c.any()==True:
             inserting_tile()
-    
-
-        
-                
-    
-    
-    
-    
-    
-    
