@@ -16,8 +16,11 @@ or when there is no non-zero place and no adjacent places with same numbers are 
 MODULES NEEDED :
 
    1.numpy: to create matrix and perform operations on matrix.
+   
    2.random: to select an random element from the game board.
+   
    3.os: to clear screen after every step.
+   
    4.argparse: to take input from command line.
 
 START OF GAME:
