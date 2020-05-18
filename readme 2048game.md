@@ -74,12 +74,14 @@ PLAYING MOVE :
    MAIN CODE:
    
       tile is inserted using function inserting_tile.
-      while loop is used to 
-      check the ending conditions of game. i.e checking availability of adjacent common places.and non zeros places.
+      while loop is used to check the ending conditions of game. i.e checking availability of adjacent common places.and non zeros             places.
+      
       then playmove is used to slide the numbers.
-      boards before moving and after moving are checked .
+      
+      boards before moving and after moving are checked and
       if both the boards are same then no new number '2' is inserted.
       after valid move and the orientation of boards is different then  screen is cleared and new tile is inserted.
       game is excecuted till the the loop is break .
+      
       result of game is displayed.
    
