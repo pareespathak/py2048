@@ -15,10 +15,10 @@ or when there is no non-zero place and no adjacent places with same numbers are 
 
 MODULES NEEDED :
 
-1.numpy: to create matrix and perform operations on matrix.
-2.random: to select an random element from the game board.
-3.os: to clear screen after every step.
-4.argparse: to take input from command line.
+   1.numpy: to create matrix and perform operations on matrix.
+   2.random: to select an random element from the game board.
+   3.os: to clear screen after every step.
+   4.argparse: to take input from command line.
 
 START OF GAME:
 
@@ -37,23 +37,22 @@ PLAYING MOVE :
      if any other input is given . game will ask to play move again till valid input.
 
  after every move a new tile will be inserted to random place numbered as '0'.
+ 
  ENDING OF GAME:
  
   If the player reaches the win value  or when no adjacent place with same number is remaining and all the places are non zeros.
   the game will be compleated .board will be printed with status.
  
 2. FUNCTIONS discription :
-
-  1. zeros function of numpy module is used to form game board as matrix .
-  2. inserting_tile:
-  
-     randit function from random module is used to choose a random element of the matrix.
-     number '2' is placed in matrix of zeros.
-  3. leftmove:
+   1. zeros function of numpy module is used to form game board as matrix .
+   2. inserting_tile:
+      randit function from random module is used to choose a random element of the matrix.
+      number '2' is placed in matrix of zeros.
+   3. leftmove:
      1. all the non zeros elements are slided to left side of game board.
      2.elements with same adjacent number are added in order from left to right of every row.
      3. again all the elements are slided to left.
-   4. rightmove:
+     4. rightmove:
       the above process is repeated along right direction
    5.moveup:
      1.all the elements are slided upside of game board.
