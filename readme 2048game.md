@@ -38,6 +38,7 @@ PLAYING MOVE :
 
  after every move a new tile will be inserted to random place numbered as '0'.
  ENDING OF GAME:
+ 
   If the player reaches the win value  or when no adjacent place with same number is remaining and all the places are non zeros.
   the game will be compleated .board will be printed with status.
  
@@ -66,15 +67,17 @@ PLAYING MOVE :
       function operate to clear the screen after every move.
       os module is used to interact with the system.
       if operating system is windows the the functio will be operate 'cls'.
-      else it will operate 'clear' 
+      else it will operate 'clear'
+      
    MAIN CODE:
-    tile is inserted using function inserting_tile.
-    while loop is used to 
-    check the ending conditions of game. i.e checking availability of adjacent common places.and non zeros places.
-    then playmove is used to slide the numbers.
-    boards before moving and after moving are checked .
-    if both the boards are same then no new number '2' is inserted.
-    after valid move and the orientation of boards is different then  screen is cleared and new tile is inserted.
-    game is excecuted till the the loop is break .
-    result of game is displayed.
+   
+      tile is inserted using function inserting_tile.
+      while loop is used to 
+      check the ending conditions of game. i.e checking availability of adjacent common places.and non zeros places.
+      then playmove is used to slide the numbers.
+      boards before moving and after moving are checked .
+      if both the boards are same then no new number '2' is inserted.
+      after valid move and the orientation of boards is different then  screen is cleared and new tile is inserted.
+      game is excecuted till the the loop is break .
+      result of game is displayed.
    
