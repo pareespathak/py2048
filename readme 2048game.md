@@ -1,7 +1,10 @@
 # py2048
-NAME : PAREES PATHAK 
-ABOUT GAME  
+NAME : PAREESPATHAK
+
+ABOUT GAME 
+
 GAME IS TESTED AND PREPARED ON WINDOWS.
+
 2048game is a single player game of sliding a number from one place to another place in a board to form a new number by adding two numbers.
 The user is supposed to enter size of board and winning value else default value is selected .
 only Same numbers can be added to form new number.numbers are added only when adjacent numbers are imposed over each other 
@@ -11,31 +14,38 @@ when the person achieved the winning value the game is over and player has won t
 or when there is no non-zero place and no adjacent places with same numbers are remaining the game is over.
 
 MODULES NEEDED :
+
 1.numpy: to create matrix and perform operations on matrix.
 2.random: to select an random element from the game board.
 3.os: to clear screen after every step.
 4.argparse: to take input from command line.
 
 START OF GAME:
+
 1. argparse module is used to take input from the user directly on command line.
    the inputs are BOARD SIZE AS "--p".and WINVALUE AS "--w" on the command line.
    if input is not given then default value is set . that is BOARD SIZE= 5, WINVALUE =2048.
    input must be integers . else input again if Winvalue is not the power of 2 then default value is set as win value.
    winvalue will be displayed above .
+   
 PLAYING MOVE :
+
      to slide upwards enter 'w' or 'W' key .
      to slide downwards enter 's' or 'S' key .
      to slide rightside enter 'd' or 'D' key .
      to slide leftside enter 'a' or 'A' key .
      if any other input is given . game will ask to play move again till valid input.
+
  after every move a new tile will be inserted to random place numbered as '0'.
  ENDING OF GAME:
   If the player reaches the win value  or when no adjacent place with same number is remaining and all the places are non zeros.
   the game will be compleated .board will be printed with status.
  
 2. FUNCTIONS discription :
+
   1. zeros function of numpy module is used to form game board as matrix .
   2. inserting_tile:
+  
      randit function from random module is used to choose a random element of the matrix.
      number '2' is placed in matrix of zeros.
   3. leftmove:
