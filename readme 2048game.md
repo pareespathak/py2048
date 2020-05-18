@@ -26,7 +26,11 @@ MODULES NEEDED :
 START OF GAME:
 
 1. argparse module is used to take input from the user directly on command line.
-   the inputs are BOARD SIZE AS "--p".and WINVALUE AS "--w" on the command line.
+   the inputs are:
+   --p for BOARD SIZE and --w for WINVALUE
+   
+        --p 'value' --w 'value' 
+    on the command line .
    if input is not given then default value is set . that is BOARD SIZE= 5, WINVALUE =2048.
    input must be integers . else input again if Winvalue is not the power of 2 then default value is set as win value.
    winvalue will be displayed above .
