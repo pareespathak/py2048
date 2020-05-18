@@ -24,9 +24,9 @@ START OF GAME:
    winvalue will be displayed above .
 PLAYING MOVE :
      to slide upwards enter 'w' or 'W' key .
-     to slide downwards enter 'w' or 'W' key .
-     to slide rightside enter 'w' or 'W' key .
-     to slide leftside enter 'w' or 'W' key .
+     to slide downwards enter 's' or 'S' key .
+     to slide rightside enter 'd' or 'D' key .
+     to slide leftside enter 'a' or 'A' key .
      if any other input is given . game will ask to play move again till valid input.
  after every move a new tile will be inserted to random place numbered as '0'.
  ENDING OF GAME:
